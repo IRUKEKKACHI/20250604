@@ -16,6 +16,13 @@ class InitScreen extends StatelessWidget {
               children: [
                 Text(
                     'Morgen will ich sagen genau so wie jetzt: ich übe heute auch wie ich gestern gemacht habe.'),
+                ElevatedButton(
+                  key: Key('navigateToCounterScreenButton'),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/counter');
+                  },
+                  child: Text('Go to counter screen'),
+                )
               ],
             ))));
   }
